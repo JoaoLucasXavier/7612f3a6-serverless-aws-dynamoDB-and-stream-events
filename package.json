@@ -1,0 +1,34 @@
+{
+  "name": "serverless-dynamodb-demo",
+  "version": "1.0.0",
+  "description": "Serverless application using AWS dynamoDB with stream events",
+  "main": "handler.js",
+  "scripts": {
+    "deploy": "sls deploy",
+    "remove": "sls remove",
+    "invoke": "sls invoke -f hero-insert --path mocks/hero-insert.json --l",
+    "invoke-local": "sls invoke local -f hero-insert --path mocks/hero-insert.json --l",
+    "invoke-trigger": "sls invoke local -f hero-trigger --path mocks/hero-trigger.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoaoLucasXavier/7612f3a6-serverless-aws-dynamoDB-and-stream-events.git"
+  },
+  "keywords": [
+    "serverless",
+    "node",
+    "aws",
+    "javascript",
+    "dynamodb",
+    "trigger",
+    "events",
+    "stream"
+  ],
+  "author": "João Lucas Xavier",
+  "license": "MIT",
+  "dependencies": {
+    "@hapi/joi": "^17.1.1",
+    "aws-sdk": "^2.1132.0"
+  }
+}

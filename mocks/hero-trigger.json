@@ -1,0 +1,36 @@
+{
+  "eventID": "093519811f2ac65fdf8b9964b1f92582",
+  "eventName": "INSERT",
+  "eventVersion": "1.1",
+  "eventSource": "aws:dynamodb",
+  "awsRegion": "us-east-1",
+  "dynamodb": {
+    "ApproximateCreationDateTime": 1652277806,
+    "Keys": {
+      "name": {
+        "S": "John"
+      },
+      "id": {
+        "S": "20030990-d133-11ec-9c5b-7d4dfb7513e3"
+      }
+    },
+    "NewImage": {
+      "name": {
+        "S": "John"
+      },
+      "id": {
+        "S": "20030990-d133-11ec-9c5b-7d4dfb7513e3"
+      },
+      "power": {
+        "S": "velocity"
+      },
+      "createAt": {
+        "S": "2022-05-11T14:03:25.225Z"
+      }
+    },
+    "SequenceNumber": "100000000054246076569",
+    "SizeBytes": 137,
+    "StreamViewType": "NEW_AND_OLD_IMAGES"
+  },
+  "eventSourceARN": "arn:aws:dynamodb:us-east-1:637989612633:table/Heroes/stream/2022-05-11T13:37:10.213"
+}
